@@ -105,6 +105,6 @@ The pie chart demonstrates the percentage distribution of categorical data, like
 
 ## Contributing:
 I want you to know that contributions to improving the dataset or visualizations are welcome. Please open an issue or submit a pull request.
-
+### note: I have done a course on Infosys Springboard through there I have worked on this project.
 ## License: 
 This project is licensed under the MIT License. See the LICENSE file for more details.
