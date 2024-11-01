@@ -1,0 +1,20 @@
+# **Pie Chart**
+
+- Assume, there is a need to find the number of cars based on the number of cylinders they contain.
+
+- First, let us see the unique number of cylinders a car contains.
+
+# For graphical representation, let us create a pie chart
+
+- Let us analyse the code to understand the pie chart shown below, as follows:
+
+1. The data is grouped on 'Cylinders' and 'Type' using the groupby() method.
+
+2. The pie() method returns patches, texts, and autotexts. Patches control individual slices of the
+pie chart. Refer to the documentation to know more about the return values.
+
+
+3. The output of the code is the pie chart shown below, which clearly depicts the distribution of number
+of cylinders of different types of cars.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Pie Chart/Figure_1.png)

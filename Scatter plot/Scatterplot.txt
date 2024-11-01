@@ -1,0 +1,26 @@
+# **Scatter Plot**
+
+1. Now that you know the individual ranges of both horsepower and mileage,
+let us find if there is any relationship between them. Plotting these values
+against each other might reveal the presence of a relationship among them.
+
+2. Since the scatter plot is a 2D plot, the x and y are passed in the same
+order as shown in the above code. The parameters 'color' and 'marker' can be
+used to adjust the colour and shape of the points shown in the plot.
+
+- For example, black asterisks are used for displaying each data point.
+
+3. Here, it can be observed that as horsepower increases the mileage is likely to decrease.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Scatter plot/Figure_1.png)
+
+# **Scatter Plot Based on a Category**
+
+1. The unique values of the car type in the previous plots. The same list is used to create
+a scatter plot between horsepower and mileage.
+
+2. From the scatter plot it can be understood that higher the horsepower, lower the milage
+of a car in a city. It can also be deduced that vans give the least mileage in a city whereas
+small cars are the best fit though they have the least horsepower.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Scatter plot/Figure_2.png)

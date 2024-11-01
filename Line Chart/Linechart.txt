@@ -1,0 +1,40 @@
+# **Line Chart**
+
+1. A line chart is a type of chart that displays information as a series of data points
+connected by straight line segments.
+
+2. Sometimes multiple graphs can depict the same information. Here, a connected scatter plot is
+created where the data is sorted based on the horsepower, to get meaningful insights from the line chart.
+
+3. You can notice that two line charts with the same axes are plotted, unlike the box plot where
+subplots created multiple boxes. To do this, the axis object, returned from the subplots( )
+method is passed to both the line charts using the 'ax' parameter. Note that the number of
+rows and columns have not been passed to the subplots method.
+
+4. The plot method takes care of the colours to make each line look distinct.
+Also, 'linestyle' parameter can be passed to display the lines in different styles.
+
+**output fig1**
+![](../../Desktop/Data Visiualization/Cars_data_DV/Line Chart/Figure_1.png)
+
+5. It can be observed that as horsepower increases the mileage is likely to decrease.
+It can also be deduced that there is a peak in mileage at around 100 horsepower,
+which was not so clear in the scatter plot created previously.
+
+6. In the 'CarsData' dataset, it is required to observe the variations in 'MPG.city', 'Engine Size',
+'MPG.highway' and 'RPM' against 'Horsepower'. The line chart can be used for this purpose to aptly show the fluctuations.
+
+7. The 'plot' method in 'matplotlib.pyplot' creates a line chart. It takes two parameters x values and y values, both numerical in nature.
+
+- Notice that RPM has been divided by 100 to maintain the scale of the graph because of its high values.
+
+"The code for the above requirement is given in Plotting Fig 2:"
+![](../../Desktop/Data Visiualization/Cars_data_DV/Line Chart/Figure_2.png)
+
+8. It can be observed that horsepower does not have a major impact on engine size. On the other hand, it unpredictably affects RPM.
+The effects of high horsepower remain the same on mileage. Although mileage of a car in a city is affected a little more than its mileage on a highway.
+
+9. A line chart can also be created vertically, by inverting the previous line chart 90 degrees to the right.
+To do so 'x' and 'y' in the 'plot' method can just be interchanged as shown fig3:
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Line Chart/Figure_3.png)
