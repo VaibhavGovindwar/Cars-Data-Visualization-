@@ -1,0 +1,73 @@
+# **Bar Chart**
+
+1.  Box plot, scatter plot, or line chart fail when there is a need to plot both categorical a
+nd numerical data, as they can only take numerical data. Then, how to find relationships between
+such types of data? Which graph can be used?
+
+2. The answer to the questions above is a bar chart or a bar graph. A bar chart takes in two features,
+'x' and 'y' as inputs. 'x' is the categorical data  plotted against 'y' which is the numerical data.
+The following code shows a simple bar chart between 'DriveTrain' and 'MPG.city' along with the plot aesthetics.
+
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Figure_1.png)
+
+# **Horizontal Bar Chart**
+
+3. A bar chart can also be plotted horizontally using the barh() method from 'matplotlib'.
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Figure_2.png)
+
+
+# **Stacked Bar Chart**
+
+1. Consider the type of data with multiple categories. Assue, there is a need to plot a graph using
+different colours representing each category.
+
+- Let us consider 'Passengers' and 'Type' from the 'CarsData' dataset.
+
+2. Matplotlib has built-in colormaps. Here, 'Paired' is used.
+Refer to 'matplotlib.cm' documentation for more colormap options.
+
+- Note: The three methods in the above code, size(), unstack() and reset_index() have been utilized
+for demonstration purposes and are required only on a case to case basis.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/stacked bar chart.png)
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Figure_3.png)
+
+# ** Error Bar Chart**
+
+1. Error bars on a cartesian graph are a graphical enhancement to visualise the variability
+of plotted data. They are used on graphs to indicate the uncertainty in a reported measurement.
+A general idea of how precise a measurement is, can be obtained by using error bar charts.
+
+2. Error bars can be added to the plot using 'yerr' or 'xerr' feature of bar() and barh() methods.
+They are used to plot the standard deviation, maximum-minimum or confidence intervals in a dataset.
+In the code, the standard deviation is plotted. Observe that a different colormap called 'seismic' has been used.
+
+3. The output of the graph. The black lines parallel to one of the axes are the error bars.
+This graph is interpreted by the length of the error bar. Longer the bar, more the deviation and
+shorter line indicates less deviation from the data.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Figure_4.png)
+
+# ** Grouped Bar Chart**
+
+1. Let us discuss the grouped bar chart where the bars are stacked beside each other to show the
+difference between multiple features used on 'x' to the values of 'y'.
+
+Assume, there is a need to see how each type of 'DriveTrain' performs based on 'MPG.city', 'MPG.highway' and 'RPM'.
+
+First, let us see the unique values in 'DriveTrain'.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/GROUPED bar chart.png)
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Screenshot 2024-10-26 133850.png)
+
+2. Now, let us plot the bar chart using the code
+
+3. The bar chart is plotted with the first argument 'x' which can be manipulated to set the
+position of the bar on the x-axis. Height or 'y' of the bar is the value from the 'grouped_cars' dataframe.
+
+4. In bar plots, the 'xticks' of the bar must be assigned. If not specified, their values would be
+equal to the values assigned to 'ind' variable, shown in the code above. To position the 'xticks'
+at the center for each of the three grouped bars, 'i+width' is used.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Bar Chart/Figure_5.png)
