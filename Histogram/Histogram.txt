@@ -1,0 +1,42 @@
+# **Histogram**
+
+1. A histogram is a graphical representation of the distribution of numerical data.
+In a histogram, the height of the bar represents the frequency in the class interval for that dataset.
+
+Assume, there is a need to plot the range of mileage under which most cars fall.
+
+The output of the code is a histogram, as shown below, from which it can be inferred that
+most cars have a mileage between 15 and 20.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Histogram/Figure_1.png)
+
+2. To get more specific information, the class interval of the data can be changed using the 'bins' parameter.
+Let us increase the number of bins from 6 to 20, as shown in the code:
+
+The output of the code is a histogram, as shown below,
+from which it can be inferred that most cars have a mileage in the range of 16 to 18, if we consider
+the range to be in intervals of two.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Histogram/Figure_2.png)
+
+3. The above graph is difficult to read because of the values on the x-axis. To address this issue,
+custom values can be set using the xticks() method.
+
+The colour of a histogram can be changed using the 'color' parameter. It is a built-in feature of
+matplotlib and can take values between C(0-9). The code implements the above requirements as shown below:
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Histogram/Figure_3.png)
+
+4. A probability density plot can be created by making a histogram smooth and continuous using an
+estimation function. It can be useful in visualising 'shape' of the data as a continuous replacement
+for a discrete histogram.
+
+note: -------import scipy-----
+5. The 'kind = density' parameter plots the density line of the data. The 'density = True'
+parameter returns the probability densities of each bar of the histogram. And, the xlim( ) method
+is used to set the limit of the axis between 14 and 50, as shown in the code:
+
+6. The most common estimation function is the 'kernel density estimation' technique that
+lets you create a smooth curve over a given set of data, as shown in the plot below:
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/Histogram/Figure_4.png)

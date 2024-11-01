@@ -1,0 +1,71 @@
+# **Box Plot**
+1. The price range of the cars can be represented using a box plot. It is a graphical way of depicting
+the five-number summary as discussed in the Introduction to Probability and Statistics course.
+
+2. Matplotlib works efficiently with dataframes and arrays. So, Pandas DataFrame can be used as they
+have some functionality of matplotlib built-in to create visualisations. You will notice that the
+same method is followed thought-out this module.
+
+3. The Python code to create a box plot for the price range of cars using cars_df["Price"] column.
+
+4. plot( ) is a method of the DataFrame that takes a parameter 'kind' for displaying the appropriate
+visualisation. For example, the word 'box' is used to generate a box plot. Similarly, other visualisations
+are generated if values like bar, line, scatter, etc. are used as the 'kind' parameter.
+
+5. The skewness of data can also be identified from the visualisation of a box plot.
+Since the box in the ScreenShot of plot is towards the minimum, this data is right-skewed.
+Similarly, if the data is left-skewed, then the box would be towards the maximum.
+
+- Mathematically:
+
+- Outliers < Q1 - 1.5 (IQR)
+
+- Outliers > Q3 + 1.5 (IQR)
+
+6. It can be observed that, if the outliers are excluded, then:
+
+- minimum price of a car comes close to 10 thousand dollars and maximum price comes close to 40 thousand dollars
+
+- most cars are priced approximately between 11 thousand dollars to 22 thousand dollars
+
+# **Output**
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/boxplot/Figure_1.png)
+
+# **Box Plot Using Sub Plots**
+
+1. Let us use the subplots functionality of 'matplotlib.pyplot' to create a grid-like system based on the
+number of rows and columns provided, as shown in the code after box plot:
+
+2. The subplots method returns a figure object and axes objects and their functionality is as follows:
+
+- Figure object: It controls the structure of the plot as shown above, where the height and width of the plot needs to be set.
+
+- Axes object: It controls what exists in the plot like labels, data, text etc.
+
+3. The number of axes objects depend on the number of elements in that grid. For example, if there are two elements,
+there will be two axes objects.
+
+4. Let us use the axes objects to create boxplots alongside each other for the range of horsepower and mileage of cars, as shown in the code:
+
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/boxplot/Figure_2.png)
+
+# **Multiple Box Plots with Same Axes**
+
+1. Another way to create a box plot is by using the 'grid' method. Let us modify the code in the previous page by
+using the 'sharey' and 'sharex' properties of the subplots.
+
+2. The different types of cars along with their prices can now be easily compared. Many other things can also be infered from the above visualisation.
+For example, vans have the smallest price range, whereas midsize cars have the largest price range
+small cars have the lowest price, whereas large cars have the highest price
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/boxplot/Figure_3.png)
+
+# **Multiple Box Plots in Smae Canvas**
+
+Until now all plots in the subplot were plotted individually, due to which they could not be compared.
+Therefore, let us try to plot box plots of different types of cars in one plot so that all these plots
+are plotted in the same canvas and are comparable.
+
+![](../../Desktop/Data Visiualization/Cars_data_DV/boxplot/Figure_4.png)
